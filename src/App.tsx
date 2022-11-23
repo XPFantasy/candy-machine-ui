@@ -15,6 +15,7 @@ import EliteXPSimpleLogo from "./EliteXPSimpleLogo.svg";
 
 import { createTheme, ThemeProvider } from "@mui/material";
 import {
+  BloctoWalletAdapter,
   CoinbaseWalletAdapter,
   PhantomWalletAdapter,
   SolflareWalletAdapter,
@@ -77,6 +78,7 @@ const App = () => {
       new PhantomWalletAdapter(),
       new CoinbaseWalletAdapter(),
       new SolflareWalletAdapter({ network }),
+      new BloctoWalletAdapter({ network }),
     ],
     []
   );
